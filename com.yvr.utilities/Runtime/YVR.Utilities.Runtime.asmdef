@@ -1,0 +1,22 @@
+{
+    "name": "YVR.Utilities.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:fe685ec1767f73d42b749ea8045bfe43"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.xr.interaction.toolkit",
+            "expression": "",
+            "define": "USE_XRITK"
+        }
+    ],
+    "noEngineReferences": false
+}
