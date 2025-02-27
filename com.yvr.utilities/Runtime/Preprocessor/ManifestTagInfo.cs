@@ -10,6 +10,7 @@
         /// its node path
         /// </summary>
         public string nodePath;
+
         /// <summary>
         /// The name of the manifest tag.
         /// </summary>
@@ -18,7 +19,7 @@
         /// <summary>
         /// The name of the attribute for the manifest tag.
         /// </summary>
-        public string attrName ;
+        public string attrName;
 
         /// <summary>
         /// The value of the attribute for the manifest tag.
@@ -39,6 +40,5 @@
         /// Indicates whether to modify the manifest tag if it is found.
         /// </summary>
         public bool modifyIfFound;
-
     }
 }

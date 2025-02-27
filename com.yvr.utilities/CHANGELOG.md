@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.15.10] - 2024-02-25
+
+### Added
+
+- 让 Manifest Processor 可以处理诸如 A/B 的嵌套 Tag
+
+## [0.15.9] - 2024-02-24
+
+### Added
+
+- 让 Manifest Process 可以处理不存在的 Parent Node
+
 ## [0.15.8] - 2024-12-31
 
 ### Added
