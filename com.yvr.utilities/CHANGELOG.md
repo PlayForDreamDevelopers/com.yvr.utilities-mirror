@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.15.11] - 2024-03-16
+
+### Added
+
+- 增加 UIThreadDispatcher 用于在 UI 线程中执行操作
+
 ## [0.15.10] - 2024-02-25
 
 ### Added
