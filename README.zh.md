@@ -7,7 +7,7 @@
     </a>
     <h1 align="center"> com.yvr.utilities-mirror </h1>
     <p align="center">
-        com.yvr.utilities-mirror 包的镜像仓库
+        com.yvr.utilities 包的镜像仓库
         <br />
         <a href="https://github.com/PlayForDreamDevelopers/com.yvr.utilities-mirror#"><strong>查看文档 »</strong></a>
         <br />
@@ -25,7 +25,7 @@
 
 ## 关于项目
 
-这是 `com.yvr.utilities-mirror` 包的镜像仓库。
+这是 `com.yvr.utilities` 包的镜像仓库。
 
 ### 示例
 

@@ -7,7 +7,7 @@
     </a>
     <h1 align="center"> com.yvr.utilities-mirror </h1>
     <p align="center">
-        Mirror repository of the package com.yvr.utilities-mirror
+        Mirror repository of the package com.yvr.utilities
         <br />
         <a href="https://github.com/PlayForDreamDevelopers/com.yvr.utilities-mirror#"><strong>View Documentation »</strong></a>
         <br />
@@ -25,7 +25,7 @@
 
 ## About The Project
 
-This is a mirror repository of the package `com.yvr.utilities-mirror`. 
+This is a mirror repository of the package `com.yvr.utilities`. 
 
 ### Samples
 
