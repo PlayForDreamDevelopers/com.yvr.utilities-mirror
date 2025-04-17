@@ -1,15 +1,10 @@
 using System;
 
-namespace YVR.Utilities
+namespace YVR.Utilities.Editor.PackingProcessor
 {
     [Serializable]
-    public class AssetInfo
+    public class PackingAssetInfo
     {
-        /// <summary>
-        /// should delete this file in destination path?
-        /// </summary>
-        public bool shouldDelete;
-
         /// <summary>
         /// asset file source path
         /// </summary>
@@ -18,6 +13,6 @@ namespace YVR.Utilities
         /// <summary>
         /// asset file destination path
         /// </summary>
-        public string androidProjectAssetPath;
+        public string apkAssetPath;
     }
 }

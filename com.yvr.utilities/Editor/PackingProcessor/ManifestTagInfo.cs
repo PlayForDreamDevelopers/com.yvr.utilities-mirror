@@ -1,4 +1,4 @@
-﻿namespace YVR.Utilities
+﻿namespace YVR.Utilities.Editor.PackingProcessor
 {
     /// <summary>
     /// Represents information about a manifest tag, including its node path, tag name, attribute name, attribute value, and any additional attributes.
@@ -33,12 +33,21 @@
 
         /// <summary>
         /// Indicates whether this manifest tag is required.
+        /// If false, the tag will be removed from the manifest if found.
         /// </summary>
-        public bool required;
+        public bool required = true;
 
-        /// <summary>
-        /// Indicates whether to modify the manifest tag if it is found.
-        /// </summary>
-        public bool modifyIfFound;
+        public ManifestTagInfo() { }
+
+        public ManifestTagInfo(string nodePath, string tag, string attrName, string attrValue,
+                               string[] attrs = null, bool required = true)
+        {
+            this.nodePath = nodePath;
+            this.tag = tag;
+            this.attrName = attrName;
+            this.attrValue = attrValue;
+            this.attrs = attrs;
+            this.required = required;
+        }
     }
 }
