@@ -4,6 +4,15 @@
       - name: 核心模块
         href: ./CoreModules.md
         items:
+            - name: PackingProcessor
+              href: ./CoreModules/PackingProcessor.md
+              items:
+                  - name: ManifestProcessor
+                    href: ./CoreModules/PackingProcessor/ManifestProcessor.md
+                  - name: ManifestTagInfo
+                    href: ./CoreModules/PackingProcessor/ManifestTagInfo.md
+                  - name: PackingAssetInfo
+                    href: ./CoreModules/PackingProcessor/PackingAssetInfo.md
             - name: Log
               href: ./CoreModules/Log.md
               items:
@@ -15,8 +24,8 @@
                     href: ./CoreModules/Log/LogPrefix.md
                   - name: Logger Controller
                     href: ./CoreModules/Log/LoggerController.md
-                  - name: YVRLogController
-                    href: ./CoreModules/Log/YVRLogController.md
+                  - name: Log Config
+                    href: ./CoreModules/Log/YVRLogConfig.md
             - name: Project Settings
               href: ./CoreModules/ProjectSettings.md
               items:

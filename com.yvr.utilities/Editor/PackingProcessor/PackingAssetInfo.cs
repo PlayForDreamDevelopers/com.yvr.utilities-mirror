@@ -11,8 +11,13 @@ namespace YVR.Utilities.Editor.PackingProcessor
         public string unityAssetPath;
 
         /// <summary>
+        /// Usage for this asset, e.g., "Splash", "ImageTracking", etc.
+        /// </summary>
+        public string usage;
+
+        /// <summary>
         /// asset file destination path
         /// </summary>
-        public string apkAssetPath;
+        [NonSerialized] public string apkAssetPath;
     }
 }

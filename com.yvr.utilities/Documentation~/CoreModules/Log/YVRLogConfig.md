@@ -8,7 +8,7 @@ YVRLogProjectSetting 作为 YVR Log 的全局配置，其 Inspector 面板如下
 ![YVR Log Project Setting](assets/YVRLogConfig/2023-09-18-14-34-23.png)
 
 
-其中 `Config` 字段配置 [YVRLogConfig](xref:YVR.Utilities.YVRLogConfig) 所定义 ScriptableObject 的路径，`Local Config Path` 字段配置本地 Json 文件的路径，该 Json 中的数据应当是 [YVRLogConfig](xref:YVR.Utilities.YVRLogConfig) 的序列化结果。`Prefix Local Config` 字段配置是否在本地 Json 文件合法的情况下，优先使用本地 Json 文件中的配置。
+其中 `Config` 字段配置 [YVRLogConfig](xref:YVR.Utilities.YVRLogConfigSO) 所定义 ScriptableObject 的路径，`Local Config Path` 字段配置本地 Json 文件的路径，该 Json 中的数据应当是 [YVRLogConfig](xref:YVR.Utilities.YVRLogConfigSO) 的序列化结果。`Prefix Local Config` 字段配置是否在本地 Json 文件合法的情况下，优先使用本地 Json 文件中的配置。
 
 该设置通过类 [YVRLogProjectSettingProvider](xref:YVR.Utilities.YVRLogProjectSettingProvider) 实现在项目的 Project Settings 界面中，对于使用者而言，应当在 Project Settings 中进行设置。
 
@@ -16,7 +16,7 @@ YVRLogProjectSetting 作为 YVR Log 的全局配置，其 Inspector 面板如下
 
 ## YVRLogConfig
 
-[YVRLogConfig](xref:YVR.Utilities.YVRLogConfig) 的配置示例如下所示：
+[YVRLogConfig](xref:YVR.Utilities.YVRLogConfigSO) 的配置示例如下所示：
 
 ![YVR Log Config](assets/YVRLogController/2023-08-22-11-31-52.png)
 
@@ -36,7 +36,7 @@ YVRLogProjectSetting 作为 YVR Log 的全局配置，其 Inspector 面板如下
 
 ## Local Json
 
-一个典型的本地配置 Json 如下，该文件即为 [YVRLogConfig](xref:YVR.Utilities.YVRLogConfig) 序列化的直接产物：
+一个典型的本地配置 Json 如下，该文件即为 [YVRLogConfig](xref:YVR.Utilities.YVRLogConfigSO) 序列化的直接产物：
 
 ```json
 {

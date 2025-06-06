@@ -2,7 +2,7 @@ namespace YVR.Utilities
 {
     public class YVRProjectSettingBaseSO<T> : YVRProjectSettingSO where T : YVRProjectSettingBaseSO<T>
     {
-        private static T s_Instance = null;
+        protected static T s_Instance = null;
 
         public static T instance
         {

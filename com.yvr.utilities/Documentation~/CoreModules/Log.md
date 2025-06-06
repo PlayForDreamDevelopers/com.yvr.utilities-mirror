@@ -12,7 +12,7 @@ Log 模块旨在为 Unity 默认的 `UnityEngin.Debug` 模块添加如下功能�
 2. [Logger](./Log/Logger.md)：各 Logger 的具体实现
 3. [LogPrefix](./Log/LogPrefix.md)：为各 Log 提供增加前缀信息的功能。
 4. [LoggerController](./Log/LoggerController.md)：为 Logger 提供控制函数
-5. [YVRLogController](./Log/YVRLogController.md): 为 YVRLog 提供工程级别的配置，可根据工程中的 [YVRLogConfig](xref:YVR.Utilities.YVRLogConfig) 或本地的 Json 文件进行配置。
+5. [Log Config](./Log/YVRLogConfig.md): 为 YVRLog 提供工程级别的配置，可根据工程中的 [YVRLogConfigSO](xref:YVR.Utilities.YVRLogConfigSO) 或本地的 Json 文件进行配置。
 
 
 其中 [Logger](./Log/Logger.md)，[LogPrefix](./Log/LogPrefix.md)，[LoggerController](./Log/LoggerController.md) 都以装饰器模式设计，保证了高拓展性。
@@ -20,7 +20,7 @@ Log 模块旨在为 Unity 默认的 `UnityEngin.Debug` 模块添加如下功能�
 # Example
 
 > [!Note]
-> 下例子只是展现了 YVRLog 的功能，实际使用中，通常不需要编写诸如 `YVRLog.RegisterLogger` 这样的样板代码，而可以通过 [YVRLogController](./Log/YVRLogController.md) 进行配置。
+> 下例子只是展现了 YVRLog 的功能，实际使用中，通常不需要编写诸如 `YVRLog.RegisterLogger` 这样的样板代码，而可以通过 [YVRLogController](./Log/LoggerController.md) 进行配置。
 
 ## 注册 Logger，配置 LogPrefix，LoggerController
 

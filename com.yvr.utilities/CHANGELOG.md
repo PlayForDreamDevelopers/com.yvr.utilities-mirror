@@ -1,6 +1,18 @@
 # Changelog
 
-## [0.15.13] - 2024-03-16
+## [0.15.14] - 2024-06-06
+
+### Changed
+
+- 将 PackingAssetInfo.apkAssetPath 作为 NonSerializedField，避免被序列化
+
+## [0.15.13] - 2024-05-23
+
+### Changed
+
+- 将 YVRProjectSettingBaseSO 中的 instance 改为 projected，以让派生类可访问
+
+## [0.15.12] - 2024-03-16
 
 ### Changed
 

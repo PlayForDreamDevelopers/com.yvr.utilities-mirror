@@ -1,6 +1,6 @@
 # Logger
 
-Logger 负责具体的将 Log 输出的工作，所有实现都必须派生自 [LoggerBase](xref:YFramework.Log.LoggerBase) 类 。
+Logger 负责具体的将 Log 输出的工作，所有实现都必须派生自 [LoggerBase](xref:YVR.Utilities.LoggerBase) 类 。
 
 对于一个 LoggerBase 类，主要有以下特性：
 
