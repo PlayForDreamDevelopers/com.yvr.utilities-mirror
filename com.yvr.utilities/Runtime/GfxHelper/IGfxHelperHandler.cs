@@ -17,6 +17,7 @@ namespace YVR.Utilities
         void CopyAndroidTexture(int srcTextureId, int dstTextureId, float alpha, bool isLinearSpace, Rect srcRect, Rect dstRect, IntPtr androidMutex);
         void CopyAndroidTextureWithAlpha(int srcTextureId, int dstTextureId, float alpha, bool isLinearSpace, IntPtr androidMutex);
         void CopyToTextureArray(int srcTextureId, int dstTextureId, int index);
+        void CopyTextureArrayToTexture(int srcTextureArrayId, int dstTextureId, int index);
         void CopyToTextureArrayMultiview(int srcTextureId, int dstTextureId, Matrix4x4[] matrixArray);
         string GetTextureWritingFolderPath();
         void SetTextureWritingFolderPath(string path);

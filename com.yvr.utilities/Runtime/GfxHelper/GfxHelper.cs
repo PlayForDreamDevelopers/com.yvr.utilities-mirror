@@ -67,6 +67,11 @@ namespace YVR.Utilities
             m_GfxHelperHandler.CopyToTextureArray(sourceTextureId, dstTextureId, index);
         }
 
+        public void CopyTextureArrayToTexture(int srcTextureArrayId, int dstTextureId, int index)
+        {
+            m_GfxHelperHandler.CopyTextureArrayToTexture(srcTextureArrayId, dstTextureId, index);
+        }
+
         public void CopyToTextureArrayMultiview(int sourceTextureId, int dstTextureId, Matrix4x4[] matrixArray)
         {
             m_GfxHelperHandler.CopyToTextureArrayMultiview(sourceTextureId, dstTextureId, matrixArray);

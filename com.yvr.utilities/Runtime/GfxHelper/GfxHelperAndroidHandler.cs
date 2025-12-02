@@ -51,6 +51,9 @@ namespace YVR.Utilities
         public static extern void copyToTextureArray(int srcTextureId, int dstTextureArrayId, int index, int isAndroidTexture, float alpha, bool isLinearSpace, Rect srcRect, Rect dstRect, IntPtr androidMutex);
 
         [DllImport("yvrutilities")]
+        public static extern void copyTextureArrayToTexture(int srcTextureArrayId, int dstTextureId, int index, float alpha, Rect srcRect, Rect dstRect);
+
+        [DllImport("yvrutilities")]
         public static extern void copyToTextureArrayMultiview(int srcTextureId, int dstTextureArrayId, float alpha, Rect srcRect, Rect dstRect, float[] matrix);
 
         private static readonly object s_LockObject = new object();
@@ -138,10 +141,19 @@ namespace YVR.Utilities
         public void CopyToTextureArray(int srcTextureId, int dstTextureId, int index)
         {
             if (!IsCopyTextureIdValid(srcTextureId, dstTextureId)) return;
-            copyToTextureArray(srcTextureId, dstTextureId, index, 0, 1.0f, false, new Rect(0f, 0f, 1f, 1f), new Rect(0f, 0f, 1f, 1f), IntPtr.Zero);
+            copyToTextureArray(srcTextureId, dstTextureId, index, 0, 1.0f, false, new Rect(0f, 0f, 1f, 1f),
+                new Rect(0f, 0f, 1f, 1f), IntPtr.Zero);
+        }
+
+        public void CopyTextureArrayToTexture(int srcTextureArrayId, int dstTextureId, int index)
+        {
+            if (!IsCopyTextureIdValid(srcTextureArrayId, dstTextureId)) return;
+            copyTextureArrayToTexture(srcTextureArrayId, dstTextureId, index, 1.0f, new Rect(0f, 0f, 1f, 1f),
+                new Rect(0f, 0f, 1f, 1f));
         }
 
         private float[] floatArray;
+
         public void CopyToTextureArrayMultiview(int srcTextureId, int dstTextureId, Matrix4x4[] matrixArray)
         {
             if (!IsCopyTextureIdValid(srcTextureId, dstTextureId)) return;

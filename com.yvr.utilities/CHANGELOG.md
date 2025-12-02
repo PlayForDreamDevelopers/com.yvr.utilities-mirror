@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.15.16] - 2025-08-13
+
+### Changed
+
+- 添加 CopyTextureArrayToTexture 方法
+
+## [0.15.15] - 2025-08-11
+
+### Changed
+
+- 将 plugin 修改为 16-align 对齐
+
 ## [0.15.14] - 2024-06-06
 
 ### Changed
